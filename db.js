@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "tic-tac-toe-tanmay.herokuapp.com",
   user: "root",
   password: "Developer_0109",
   database: "tictactoegame",
