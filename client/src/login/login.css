@@ -1,0 +1,15 @@
+.app-login-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.app-login-parent .title {
+  margin: unset;
+  margin-bottom: 15px;
+}
+.app-login-parent .login-title {
+  margin-bottom: 15px;
+}

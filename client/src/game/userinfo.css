@@ -1,0 +1,26 @@
+.user-info-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-msg {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #1306dc;
+}
+
+.user-name {
+  color: #da5d05;
+}
+.email {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #da5d05;
+}
+
+.image img {
+  border-radius: 100px;
+  width: 125px;
+}
