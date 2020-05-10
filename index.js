@@ -3,7 +3,6 @@ const path = require("path");
 //const generatePassword = require("password-generator");
 
 const app = express();
-const port = "3010";
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "client/build")));
 
@@ -28,7 +27,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
-// const port = process.env.PORT || 3010;
+const port = process.env.PORT || 3010;
 app.listen(port);
 
 console.log(`Tic Tac Toe App With Express listening on ${port}`);
