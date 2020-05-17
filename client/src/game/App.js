@@ -6,8 +6,8 @@ import { gapi } from "gapi-script";
 import { setUserInfo, toggleLoginState } from "../actions/login";
 
 const App = (props) => {
-  let auth2;
   useEffect(() => {
+    let auth2;
     if (typeof gapi !== "undefined") {
       gapi.load("auth2", function () {
         auth2 = gapi.auth2.init({

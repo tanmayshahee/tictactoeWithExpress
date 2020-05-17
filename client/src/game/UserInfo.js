@@ -15,7 +15,7 @@ const UserInfo = (props) => {
       </div>
       <div className="email">{props.userInfo.email}</div>
       <div className="image">
-        <img src={props.userInfo.imageUrl} />
+        <img src={props.userInfo.imageUrl} alt="" />
       </div>
     </div>
   );
