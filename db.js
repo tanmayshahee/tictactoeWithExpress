@@ -1,10 +1,18 @@
 var mysql = require("mysql");
+var dbConfig = require("./db.config");
+
 var connection = mysql.createConnection({
-  host: "tic-tac-toe-tanmay.herokuapp.com",
-  user: "root",
-  password: "Developer_0109",
-  database: "tictactoegame",
+  host: dbConfig.HOST,
+  user: dbConfig.USER,
+  password: dbConfig.PASSWORD,
+  database: dbConfig.DB,
 });
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "Developer_0109",
+//   database: "tictactoegame",
+// });
 
 connection.connect(function (err) {
   if (err) {
