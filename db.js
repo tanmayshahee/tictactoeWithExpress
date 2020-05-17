@@ -14,11 +14,11 @@ var connection = mysql.createPool({
 //   database: "tictactoegame",
 // });
 
-connection.connect(function (err) {
-  if (err) {
-    console.log(err);
-    throw err;
-  }
-});
+// connection.connect(function (err) {
+//   if (err) {
+//     console.log(err);
+//     throw err;
+//   }
+// });
 
 module.exports = connection;
